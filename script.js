@@ -1,13 +1,10 @@
-function getFormvalue(event) {
-  event.preventDefault(); // Prevents the form from submitting and refreshing the page
-  
-  // Get values from the form
-  const firstName = document.getElementById('firstName').value;
-  const lastName = document.getElementById('lastName').value;
-  
-  // Display the values using alert
-  alert(`First Name: ${firstName}\nLast Name: ${lastName}`);
-}
+// script.js
 
-// Add event listener to the form on submit
-document.getElementById('myForm').addEventListener('submit', getFormvalue);
+function getFormValue() {
+    // Get the values of the First and Last Name
+    const firstName = document.getElementById('fname').value;
+    const lastName = document.getElementById('lname').value;
+
+    // Display the first and last name using alert
+    alert(firstName +" "+ lastName);
+}
